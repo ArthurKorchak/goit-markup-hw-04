@@ -173,10 +173,18 @@ body ul {
     margin: 0;
 }
 .footer {
+    color: #FFFFFF;
     padding: 60px 0px;
+}
+.footer h3 {
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px;
 }
 .footer > div {
     flex-direction: column;
+}
+.footer .container {
+    flex-direction: row
 }
 .pf-buttons {
     justify-content: center;
@@ -202,6 +210,12 @@ body ul {
 .portfolio .pf-item {
     flex-direction: column;
 }
+.pf-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .card-footer {
     flex-direction: column;
     padding: 20px 24px;
@@ -226,10 +240,6 @@ body ul {
 .logo-color1 {
     color: var(--accent-color);
 }
-.logo-f {
-    color: #FFFFFF;
-    margin-bottom: 20px;
-}
 .logo-f-container {
     margin: 0;
 }
@@ -238,6 +248,14 @@ body ul {
 }
 .logo-f-container .link{
     margin: 9px 0 0 0;
+}
+.logo-f {
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.logo.logo-f {
+    margin-right: 0;
 }
 .link {
     color: var(--primary-text-color);
@@ -259,12 +277,10 @@ body ul {
 .link.contact-f {
     color: #FFFFFF99;
 }
-.link:hover {
+.link:hover,
+.link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
-}
-.link:focus{
-    color: var(--accent-color);
 }
 .link-white {
     color: #FFFFFF;
@@ -284,7 +300,8 @@ body ul {
     border-radius: 4px;
     padding: 6px 22px;
 }
-.button:hover, .button:focus {
+.button:hover, 
+.button:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
     height: 38px;
@@ -332,10 +349,6 @@ body ul {
     grid-gap: 10px;
     padding: 0px 32px 30px 32px;
 }
-.social-team div:hover, .social-team div:focus {
-    background-color: var(--accent-color);
-    fill: var(--background-color);
-}
 .social-team div {
     cursor: pointer;
     background-color: var(--background-color);
@@ -357,6 +370,7 @@ body ul {
     grid-gap: 30px;
 }
 .clients div {
+    cursor: pointer;
     width: 170px;
     height: 92px;
     background-color: var(--background-color);
@@ -364,9 +378,32 @@ body ul {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    fill: #AFB1B8; */
+    fill: #AFB1B8;
 }
-.clients div:hover {
+.clients div:hover,
+.clients div:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+.social-team-f {
+    grid-gap: 10px;
+    margin: 0;
+}
+.social-team-f div {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    fill: #FFFFFF;
+}
+.social-team-f div:hover,
+.social-team-f div:focus {
+    background-color: var(--accent-color);
+    fill: var(--background-color);
+}
+.invite {
+    padding: 12px 0px 40px 0px;
+    margin-left: 70px;
 }
