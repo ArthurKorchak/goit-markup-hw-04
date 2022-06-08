@@ -73,7 +73,6 @@ body ul {
     background-color: var(--background-2-color);
 }
 .hero {
-    background-color: var(--background-2-color);
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
@@ -82,9 +81,16 @@ body ul {
     letter-spacing: 0.06em;
     margin: 0;
     padding: 0;
+    background-size: contain;
 }
 .section.hero {
+    ???
+    background-image: url("../images/img-back-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px 600px;
+    width: 1600px;
     padding: 200px 0px;
+    margin: 0 auto;
 }
 .main-text {
     color: #FFFFFF;
@@ -137,7 +143,7 @@ body ul {
     grid-gap: 30px;
     margin: 0;
 }
-.team-team li {
+.team-team > li {
     display: flex;
     background-color: var(--background-color);
     flex-direction: column;
@@ -328,4 +334,7 @@ body ul {
     border-radius: 4px;
     padding: 25px 102.34px;
     margin-bottom: 30px;
+}
+.social-team {
+    grid-gap: 10px;
 }
