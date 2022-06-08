@@ -239,13 +239,19 @@ body ul {
 }
 .link.contact {
     color: var(--secondary-text-color);
+    fill: var(--secondary-text-color);
     margin-left: 30px;
+    align-items: center;
+}
+.icon-contact {
+    margin-right: 10px;
 }
 .link.contact-f {
     color: #FFFFFF99;
 }
 .link:hover {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .link:focus{
     color: var(--accent-color);
