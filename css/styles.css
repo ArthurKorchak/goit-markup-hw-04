@@ -332,24 +332,10 @@ body ul {
     grid-gap: 10px;
     padding: 0px 32px 30px 32px;
 }
-.social-team div {
-    background-color: var(--background-color);
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
-    padding: 12px;
-    fill: #AFB1B8;
-}
 .social-team div:hover, .social-team div:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
-.clients {
-    grid-gap: 10px;
-    padding: 16px 32px;
-
-}
-
 .social-team div {
     cursor: pointer;
     background-color: var(--background-color);
@@ -359,12 +345,21 @@ body ul {
     padding: 12px;
     fill: #AFB1B8;
 }
-
 .social-team div:hover,
 .social-team div:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
+.clients {
+    grid-gap: 30px;
+}
 .client {
+    width: 170px;
+    height: 92px;
+    background-color: var(--background-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
 
 }
