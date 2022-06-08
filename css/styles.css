@@ -350,10 +350,13 @@ body ul {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
+.client h2 {
+    margin-bottom: 50px;
+}
 .clients {
     grid-gap: 30px;
 }
-.client {
+.clients div {
     width: 170px;
     height: 92px;
     background-color: var(--background-color);
@@ -361,5 +364,9 @@ body ul {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-
+    fill: #AFB1B8; */
+}
+.clients div:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
