@@ -88,8 +88,7 @@ body ul {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),url("../images/img-back-hero.jpg");
     background-repeat: no-repeat;
-    background-size: 1600px 600px;
-    width: 1600px;
+    max-width: 1600px;
     padding: 200px 0px;
     margin: 0 auto;
     text-align: center;
@@ -342,24 +341,27 @@ body ul {
     background-color: #F5F4FA;
     height: 120px;
     border-radius: 4px;
-    padding: 25px 102.34px;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .social-team {
     grid-gap: 10px;
     padding: 0px 32px 30px 32px;
 }
-.social-team div {
+.social-team a {
+    display: flex;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
     background-color: var(--background-color);
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    padding: 12px;
     fill: #AFB1B8;
 }
-.social-team div:hover,
-.social-team div:focus {
+.social-team a:hover,
+.social-team a:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
@@ -369,7 +371,8 @@ body ul {
 .clients {
     grid-gap: 30px;
 }
-.clients div {
+.clients a {
+    display: flex;
     cursor: pointer;
     width: 170px;
     height: 92px;
@@ -380,8 +383,8 @@ body ul {
     align-items: center;
     fill: #AFB1B8;
 }
-.clients div:hover,
-.clients div:focus {
+.clients a:hover,
+.clients a:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
@@ -389,17 +392,19 @@ body ul {
     grid-gap: 10px;
     margin: 0;
 }
-.social-team-f div {
+.social-team-f a {
+    display: flex;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    padding: 12px;
     fill: #FFFFFF;
 }
-.social-team-f div:hover,
-.social-team-f div:focus {
+.social-team-f a:hover,
+.social-team-f a:focus {
     background-color: var(--accent-color);
     fill: var(--background-color);
 }
